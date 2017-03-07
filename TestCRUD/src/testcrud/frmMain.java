@@ -50,14 +50,13 @@ public class frmMain extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
-        delete = new javax.swing.JButton();
-        clear = new javax.swing.JButton();
-        refresh = new javax.swing.JButton();
-        tgl = new javax.swing.JLabel();
-        save = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         edit = new javax.swing.JButton();
         print = new javax.swing.JButton();
+        save = new javax.swing.JButton();
+        delete = new javax.swing.JButton();
+        clear = new javax.swing.JButton();
+        refresh = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tabel = new javax.swing.JTable();
@@ -85,56 +84,11 @@ public class frmMain extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jm = new javax.swing.JLabel();
+        tgl = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-
-        delete.setBackground(new java.awt.Color(255, 255, 255));
-        delete.setText("DELETE");
-        delete.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deleteActionPerformed(evt);
-            }
-        });
-        getContentPane().add(delete);
-        delete.setBounds(469, 120, 80, 30);
-
-        clear.setBackground(new java.awt.Color(255, 255, 255));
-        clear.setText("CLEAR");
-        clear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clearActionPerformed(evt);
-            }
-        });
-        getContentPane().add(clear);
-        clear.setBounds(565, 120, 80, 30);
-
-        refresh.setBackground(new java.awt.Color(255, 255, 255));
-        refresh.setText("REFRESH");
-        refresh.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                refreshActionPerformed(evt);
-            }
-        });
-        getContentPane().add(refresh);
-        refresh.setBounds(660, 120, 90, 30);
-
-        tgl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        tgl.setForeground(new java.awt.Color(255, 255, 255));
-        tgl.setText("Tanggal");
-        getContentPane().add(tgl);
-        tgl.setBounds(820, 0, 170, 40);
-
-        save.setBackground(new java.awt.Color(255, 255, 255));
-        save.setText("SAVE");
-        save.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                saveActionPerformed(evt);
-            }
-        });
-        getContentPane().add(save);
-        save.setBounds(380, 120, 80, 30);
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 255));
         jPanel1.setLayout(null);
@@ -147,7 +101,7 @@ public class frmMain extends javax.swing.JFrame {
             }
         });
         jPanel1.add(edit);
-        edit.setBounds(420, 30, 80, 30);
+        edit.setBounds(540, 30, 80, 30);
 
         print.setBackground(new java.awt.Color(0, 204, 204));
         print.setText("PRINT");
@@ -157,10 +111,50 @@ public class frmMain extends javax.swing.JFrame {
             }
         });
         jPanel1.add(print);
-        print.setBounds(560, 30, 80, 30);
+        print.setBounds(710, 30, 80, 30);
+
+        save.setBackground(new java.awt.Color(255, 255, 255));
+        save.setText("SAVE");
+        save.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveActionPerformed(evt);
+            }
+        });
+        jPanel1.add(save);
+        save.setBounds(140, 30, 80, 30);
+
+        delete.setBackground(new java.awt.Color(255, 255, 255));
+        delete.setText("DELETE");
+        delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteActionPerformed(evt);
+            }
+        });
+        jPanel1.add(delete);
+        delete.setBounds(230, 30, 80, 30);
+
+        clear.setBackground(new java.awt.Color(255, 255, 255));
+        clear.setText("CLEAR");
+        clear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearActionPerformed(evt);
+            }
+        });
+        jPanel1.add(clear);
+        clear.setBounds(320, 30, 80, 30);
+
+        refresh.setBackground(new java.awt.Color(255, 255, 255));
+        refresh.setText("REFRESH");
+        refresh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                refreshActionPerformed(evt);
+            }
+        });
+        jPanel1.add(refresh);
+        refresh.setBounds(420, 30, 90, 30);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(350, 90, 680, 90);
+        jPanel1.setBounds(350, 90, 850, 90);
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 255));
         jPanel2.setLayout(null);
@@ -192,10 +186,10 @@ public class frmMain extends javax.swing.JFrame {
         jScrollPane2.setViewportView(tabel);
 
         jPanel2.add(jScrollPane2);
-        jScrollPane2.setBounds(10, 10, 660, 490);
+        jScrollPane2.setBounds(10, 10, 830, 490);
 
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(350, 200, 680, 510);
+        jPanel2.setBounds(350, 200, 850, 510);
 
         jPanel3.setBackground(new java.awt.Color(102, 102, 255));
         jPanel3.setLayout(null);
@@ -305,10 +299,16 @@ public class frmMain extends javax.swing.JFrame {
         jm.setForeground(new java.awt.Color(255, 255, 255));
         jm.setText("Jam");
         jPanel4.add(jm);
-        jm.setBounds(820, 30, 170, 40);
+        jm.setBounds(1020, 30, 170, 40);
+
+        tgl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        tgl.setForeground(new java.awt.Color(255, 255, 255));
+        tgl.setText("Tanggal");
+        jPanel4.add(tgl);
+        tgl.setBounds(1020, 0, 170, 40);
 
         getContentPane().add(jPanel4);
-        jPanel4.setBounds(0, 0, 1040, 80);
+        jPanel4.setBounds(0, 0, 1210, 80);
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -316,7 +316,7 @@ public class frmMain extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1040, Short.MAX_VALUE)
+            .addGap(0, 1210, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -324,16 +324,21 @@ public class frmMain extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel5);
-        jPanel5.setBounds(0, 0, 1040, 720);
+        jPanel5.setBounds(0, 0, 1210, 720);
 
-        setBounds(0, 0, 1056, 758);
+        setBounds(0, 0, 1227, 758);
     }// </editor-fold>//GEN-END:initComponents
 
     private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
         // TODO add your handling code here:
+        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd");
+        Date dateFormat = null;
+
         nama.setText("");
         nis.setText("");
         kelas.setText("");
+        tempat.setText("");
+        Tanggal.setDate(dateFormat);
         buttonGroup1.clearSelection();
         email.setText("");
         alamat.setText("");
