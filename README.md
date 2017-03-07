@@ -22,3 +22,5 @@
 ![j](https://cloud.githubusercontent.com/assets/22128258/23659187/e7c9c156-0377-11e7-9688-5f9b612f6cbf.png)
 ## Hasil Cetak : 
 ![k](https://cloud.githubusercontent.com/assets/22128258/23659188/e7cb2776-0377-11e7-8213-da6651f834f2.png)
+<br>
+#Aqshal Fajar Putra, XIRPL1, 02, 4667/1386.070, SMK Telkom Malang.
